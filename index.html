@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gasthaus Alpenblick München | Bayerisches Restaurant</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Georgia,serif}
+body{background:#fff8e7;color:#222}
+header{background:#7c2d12;color:white;padding:18px 20px;display:flex;justify-content:space-between;align-items:center}
+.btn{background:#fbbf24;color:#111;padding:12px 18px;border-radius:10px;text-decoration:none;font-weight:bold;font-family:Arial}
+.hero{background:linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1200');background-size:cover;background-position:center;color:white;padding:70px 20px;text-align:center}
+.hero h1{font-size:40px}
+.hero p{margin:16px 0;font-size:18px;font-family:Arial}
+.menu{max-width:800px;margin:auto;padding:40px 20px}
+.item{display:flex;justify-content:space-between;background:white;padding:16px;border-radius:12px;margin-bottom:12px;font-family:Arial}
+form{max-width:600px;margin:0 auto 40px;background:white;padding:24px;border-radius:16px;display:grid;gap:12px}
+input,select{padding:13px;border:1px solid #ddd;border-radius:10px;width:100%}
+footer{background:#7c2d12;color:white;text-align:center;padding:20px;font-family:Arial}
+@media(max-width:700px){.hero h1{font-size:30px}}
+</style>
+</head>
+<body>
+<header><b>GASTHAUS ALPENBLICK</b><a class="btn" href="#reservieren">Tisch reservieren</a></header>
+<div class="hero">
+<h1>Echt Bayerisch. Echt Lecker.</h1>
+<p>Authentic Bavarian Food in München • Since 1987</p>
+<a class="btn" href="#reservieren">Jetzt reservieren → Book Table</a>
+<p style="margin-top:14px">⭐ 4.8 - 890 Bewertungen • 📍 Marienplatz, München</p>
+</div>
+<div class="menu">
+<h2 style="text-align:center;margin-bottom:20px">Speisekarte / Menu</h2>
+<div class="item"><span>🥨 Brezel + Obatzda</span><b>€8,90</b></div>
+<div class="item"><span>🍖 Schweinshaxe mit Knödel</span><b>€19,90</b></div>
+<div class="item"><span>🌭 Weißwurst + Brezel (2 Stück)</span><b>€11,50</b></div>
+<div class="item"><span>🍰 Kaiserschmarrn</span><b>€9,50</b></div>
+</div>
+<div id="reservieren" style="padding:0 20px">
+<form onsubmit="alert('Danke! Ihr Tisch ist reserviert. / Thank you! Your table is reserved.');return false;">
+<h2 style="text-align:center">Tisch reservieren / Reserve Table</h2>
+<input placeholder="Name / Nombre" required>
+<input placeholder="Telefon / Phone" required>
+<input type="date" required>
+<select><option>2 Personen</option><option>4 Personen</option><option>6+ Personen</option></select>
+<button class="btn" style="border:none;cursor:pointer;font-size:16px">Reservieren → Reserve</button>
+</form>
+</div>
+<footer>Gasthaus Alpenblick • Marienplatz 8, 80331 München • Tel: +49 89 123456 • Täglich 11:00 - 23:00</footer>
+</body>
+  </html>
